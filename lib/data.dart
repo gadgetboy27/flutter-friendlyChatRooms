@@ -10,7 +10,7 @@ class User {
   });
 }
 
-const User currentUser = User(
+const User initialUser = User(
   givenName: 'Marcus',
   familyName: 'Ng',
   imageUrl:

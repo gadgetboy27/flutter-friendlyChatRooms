@@ -5,8 +5,6 @@ import 'package:friendlychat/widgets/upcoming_rooms_list.dart';
 import 'package:friendlychat/widgets/widgets.dart';
 import 'package:friendlychat/data.dart';
 
-
-
 class HomeScreen extends StatelessWidget {
 
   @override
@@ -46,7 +44,7 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(
             8.0, 10.0, 20.0, 10.0),
           child: UserProfileImage(
-          imageUrl: currentUser.imageUrl,size:36.0),
+          imageUrl: initialUser.imageUrl,size:36.0),
         ),
        ],
       ),
@@ -110,6 +108,33 @@ class HomeScreen extends StatelessWidget {
              )
             ),
           ),
+          Positioned(
+            bottom: 60.0,
+            right: 40.0,
+            child:Stack(
+              alignment: Alignment.center,
+              children: [
+                IconButton(
+                 icon: const Icon(CupertinoIcons.circle_grid_3x3_fill,
+                 size: 28.0,
+                 ),
+                 onPressed: (){},
+                 ),
+                 Positioned(
+                   right: 4.6,
+                   bottom: 11.8,
+                   child: Container(
+                     height: 16.0,
+                     width: 16.0,
+                     decoration: BoxDecoration(
+                       shape: BoxShape.circle,
+                       color: Theme.of(context).accentColor,
+                    ),
+                  ),
+                )
+              ],
+            )
+          )
         ],
       ),
     );
