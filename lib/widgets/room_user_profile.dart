@@ -48,7 +48,7 @@ class RoomUserProfile extends StatelessWidget {
                   ]
                 ),
                 alignment: Alignment.center,
-                child: const Text('',
+                child: const Text('🔥',
                 style: TextStyle(fontSize: 20.0),
                 ),
               ),
